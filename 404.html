@@ -1,0 +1,16 @@
+<!-- public/404.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+    <script>
+      const path = location.pathname.replace('/travel_now', '');
+      const newUrl = '/travel_now/' + path + location.search + location.hash;
+      window.location.replace(newUrl);
+    </script>
+  </body>
+</html>
